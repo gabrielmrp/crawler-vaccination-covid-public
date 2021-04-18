@@ -9,22 +9,22 @@
     "al": {
         "name": "estado de <strong>Alagoas<\/strong>",
         "uri_refer": "https:\/\/vacina.maceio.al.gov.br\/",
-        "data": "Grupo Atual:            Profissionais da saúde a partir de 34 anos, portadores de síndrome de Down com 18 a 59 anos e idosos a partir de 60 anos.",
+        "data": "Grupo Atual:            Idosos a partir de 60 anos, profissionais de saúde a partir de 34 anos, portadores de Síndrome de Down de 18 a 59 anos e portadores de comorbidades para Covid-19 a partir de 59 anos",
         "updated_at": "18-04-2021",
         "age": 60
     },
     "ap": {
         "name": "estado do <strong>Amapá<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/ap\/amapa\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-macapa-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": "Quem pode ser vacinado? Idosos com 60 anos ou mais;Equipe volante responsável pela vacinação;Profissionais de 8 hospitais  da cidade ;Trabalhadores de clínicas de saúde da rede privada;Profissionais das Unidades Básicas de Saúde ;Trabalhadores do Serviço Móvel de Atendimento de Urgência ;Idosos do Abrigo São José;Indígenas em atendimento na Casa de Apoio Indígena  ou que têm residência em Macapá.Profissionais das forças de segurança pública;Pessoas entre 18 e 59 anos com comorbidades.",
-        "updated_at": "2021-04-16 10:55:37.495 ",
+        "data": "Quem pode ser vacinado? Idosos com 60 anos ou mais;Equipe volante responsável pela vacinação;Profissionais de 8 hospitais  da cidade ;Trabalhadores de clínicas de saúde da rede privada;Profissionais das Unidades Básicas de Saúde ;Trabalhadores do Serviço Móvel de Atendimento de Urgência ;Idosos do Abrigo São José;Indígenas em atendimento na Casa de Apoio Indígena  ou que têm residência em Macapá.Profissionais das forças de segurança pública;Pessoas entre 18 e 59 anos com comorbidades.      Lista de hospitais que receberam doses da vacina: Hospital Universitário Hospital de EmergênciaHospital da Mulher Mãe LuziaPronto Atendimento InfantilHospital da Criança e do AdolescenteHospital das Clínicas Alberto LimaHospital Central UnimedHospital São Camilo e São Luís Veja o plantão de últimas notícias do G1 Amapá ",
+        "updated_at": "2021-04-18 12:15:15.471 ",
         "age": 60
     },
     "am": {
         "name": "estado do <strong>Amazonas<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/am\/amazonas\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-manaus-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": "Quem pode ser vacinado Idosos;Pessoas de 18 a 59 anos com diabetes, obesidade grave e cardiopatiasAdultos a partir de 55 anos com qualquer comorbidade elencada como prioritária pelo Ministério da Saúde.Idosos e pessoas com deficiência em instituições de longa permanência;Agentes de segurança pública;Trabalhadores da saúde, tanto da rede pública quanto privada;Indígenas aldeados. ",
-        "updated_at": "2021-04-17 14:42:28.620 ",
+        "data": "Quem pode ser vacinado Idosos;Pessoas de 18 a 59 anos com diabetes, obesidade grave e cardiopatias;Adultos a partir de 55 anos com qualquer comorbidade elencada como prioritária ",
+        "updated_at": "2021-04-18 13:45:24.472 ",
         "age": 60
     },
     "ba": {
@@ -37,7 +37,7 @@
     "ce": {
         "name": "estado do <strong>Ceará<\/strong>",
         "uri_refer": "https:\/\/www1.folha.uol.com.br\/equilibrioesaude\/2021\/04\/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml",
-        "data": "Á\r\rPessoas de 62 anos: faixa etária que está sendo vacinada nesta semana na capital cearense\r\rForças de segurança: vacinação foi iniciada no último domingo \r\r",
+        "data": "CEARÁ\r\rPessoas de 62 anos: faixa etária que está sendo vacinada nesta semana na capital cearense\r\rForças de segurança: vacinação foi iniciada no último domingo \r\r",
         "updated_at": "2021-04-17 20:50:00",
         "age": 62
     },
@@ -48,17 +48,10 @@
         "updated_at": "2021-04-16 15:30:23.640 ",
         "age": 64
     },
-    "es": {
-        "name": "estado do <strong>Espírito Santo<\/strong>",
-        "uri_refer": "https:\/\/www1.folha.uol.com.br\/equilibrioesaude\/2021\/04\/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml",
-        "data": "\r\rPessoas de 60 a 64 anos: Vitória vacinou pessoas de 60 a 64 anos no sábado , mas espera remessa de novas doses, prevista para sexta, para continuar. Apenas pessoas acamadas, nesta faixa etária, seguem sendo vacinadas\r\rTrabalhadores da educação: Ato simbólico iniciou vacinação de profissionais das redes pública e privada, nesta quinta. Nos municípios, deve começar na próxima semana. Capital ainda não divulgou data.\r\rForças de segurança: capital iniciou na terça-feira  a vacinação de profissionais das forças de segurança e salvamento e Forças Armadas.\r\rSul\r\r",
-        "updated_at": "2021-04-17 20:50:00",
-        "age": 60
-    },
     "go": {
         "name": "estado de <strong>Goiás<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/go\/goias\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-goiania-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": "Quem pode receber a 1ª dose Idosos com 62 anos ou mais ",
+        "data": "Quem pode receber a 1ª dose Idosos com 62 anos ou mais Quem pode receber a 2ª dose",
         "updated_at": "2021-04-18 00:22:06.525 ",
         "age": 62
     },
@@ -79,14 +72,14 @@
     "ms": {
         "name": "estado do <strong>Mato Grosso do Sul<\/strong>",
         "uri_refer": "https:\/\/www1.folha.uol.com.br\/equilibrioesaude\/2021\/04\/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml",
-        "data": "Quem pode ser vacinado no município atualmente Equipe volante responsável pela vacinação;Profissionais dos hospitais, pronto atendimento, laboratórios e centro de diagnóstico por Imagem que fazem exames para Covid-19, unidades de saúde da Atenção Primária e Secundária e Vigilância em Saúde;Idosos com 85 anos ou mais;Idosos não acamados de 65 a 70 anosIdosos acima de 70 anos ",
+        "data": "MATO GROSSO DO SUL\r\rEm Campo Grande, nesta semana, a prefeitura aplicou doses remanescentes em indígenas não aldeados e moradores de comunidades quilombolas com menos de 60 anos e deu continuidade à aplicação de segunda dose.\r\rA vacinação dos demais grupos foi interrompida no sábado , quando foram imunizados profissionais de segurança. Na sexta-feira , pessoas com 61 anos também receberam as primeiras doses.\r\r",
         "updated_at": "2021-04-17 20:50:00",
-        "age": 70
+        "age": 61
     },
     "mg": {
         "name": "estado de <strong>Minas Gerais<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/mg\/minas-gerais\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-belo-horizonte-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": "Quem pode receber a 1ª dose Todos os idosos a partir de 63 anosEquipe volante responsável pela vacinação;Profissionais de saúde dos 49 hospitais  da cidade; das 9 Unidades de Pronto Atendimento e do Serviço Móvel de Atendimento de Urgência ; dos 152 centros de saúde do município; de centros de especialidades médicas; de atenção secundária do SUS; de laboratórios; de serviços de atenção domiciliar; de serviços de hemodiálise; de hospital-dia; de clínicas oncológicas.Moradores e profissionais  que atuam em todas as Instituições de Longa Permanência para Idosos Trabalhadores lotados nos 16 Cersams, Centros de Referência em Saúde Mental Demais trabalhadores de saúde, com idade acima de 43 anos, que fizeram o cadastro no portal da PrefeituraMoradores  e profissionais  dos Serviços de Residência Terapêutica Moradores acima de 18 anos e profissionais  das Residências Inclusivas       ",
+        "data": "Quem pode receber a 1ª dose Todos os idosos a partir de 63 anos",
         "updated_at": "2021-04-16 20:02:38.634 ",
         "age": 63
     },
@@ -100,9 +93,9 @@
     "pb": {
         "name": "estado da <strong>Paraíba<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/pb\/paraiba\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-joao-pessoa-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": "Quem pode ser vacinado Pessoas com 78 anos ou mais, que vão tomar a dose de reforço da vacina Coronavac\/Butantan.  ",
-        "updated_at": "2021-04-17 20:45:51.302 ",
-        "age": 78
+        "data": "Quem pode ser vacinado Pessoas com 76 anos ou mais, que vão tomar a dose de reforço da vacina Coronavac\/Butantan.  ",
+        "updated_at": "2021-04-18 10:14:11.170 ",
+        "age": 76
     },
     "pr": {
         "name": "estado do <strong>Paraná<\/strong>",
@@ -115,15 +108,15 @@
         "name": "estado de <strong>Pernambuco<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/pe\/pernambuco\/noticia\/2021\/01\/27\/vacina-contra-covid-19-no-recife-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
         "data": "Quem pode ser vacinado Trabalhadores da saúde com mais de 50 anos, com atuação em qualquer área, e os de outras idades com atuação nas seguintes áreas: Linha de frente de combate à doença;Atenção básica;Serviços públicos e privados de UTISetores hospitalares de cardiologia, vascular, neurologia, imagem, endoscopia e broncoscopia;Quimioterapia ambulatorial e internamento; Maternidades; Policlínicas municipais; Serviços de inspeção sanitária, investigação epidemiológica e sanitização. Além deles e de cirurgiões-dentistas de qualquer idade, podem ser vacinados também: Pessoas com idades a partir de 60 anos de idade;Idosos acima de 60 anos que residem em instituições de longa permanência  e trabalhadores desses locais;Pessoas com deficiência severa a partir de 18 anos que moram em residências inclusivas. A prefeitura informou que concluiu a vacinação dos integrantes desse dois últimos grupos prioritários. ",
-        "updated_at": "2021-04-17 12:29:27.057 ",
+        "updated_at": "2021-04-18 14:10:49.668 ",
         "age": 60
     },
     "pi": {
         "name": "estado do <strong>Piauí<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/pi\/piaui\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-teresina-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": ">Quem pode receber a 1ª dose Idosos com 66 anos; veja aqui locais e horários Os públicos listados abaixo, tomam a primeira dose mediante agendamento: Pacientes renais crônicos no Centro Integrado de Saúde Lineu Araújo e nas clínicas particulares onde fazem tratamentoProfissionais de saúdePessoas acamadas ou com deficiência ",
-        "updated_at": "2021-04-17 13:15:16.341 ",
-        "age": 66
+        "data": "Quem pode receber a 1ª dose Neste domingo , estão sendo vacinados os idosos com 65 anos. Pela manhã, de 9h às 13h, devem comparecer aos postos as mulheres e pela tarde, de 13h às 17h, os homens. Postos de drive-thru: Centro Universitário Santo Agostinho - Avenida Professor Valter Alencar, 855, Bairro São Pedro;Centro de Artes e Esportes Unificados Vieira Toranga ;Terminal de Integração Buenos Aires;Terminal de Integração Zoobotânico;Terminal de Integração Bela Vista;Terminal de Integração Livramento;Centro Universitário Uninovafapi;Terminal de Integração ItararéUniversidade Estadual do Piauí  - Campus Torquato Neto - Rua João Cabral, 2231, Bairro Pirajá;Terminal de Integração Parque Piauí - Avenida Marechal Juarez Távora, 118, Bairro Parque Piauí ;ADUFPI - Av. Universitária, 391, Bairro Ininga;Teresina Shopping - Edifício Garagem G1 - Avenida Raul Lopes, 1000, Bairro dos Noivos;Faculdade Estácio - Av. dos Expedicionários, 790 – São João Os públicos listados abaixo, tomam a ",
+        "updated_at": "2021-04-18 12:28:38.701 ",
+        "age": 65
     },
     "rj": {
         "name": "estado do <strong>Rio de Janeiro<\/strong>",
@@ -149,7 +142,7 @@
     "ro": {
         "name": "estado de <strong>Rondônia<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/ro\/rondonia\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-porto-velho-veja-quem-pode-ser-vacinado-hoje.ghtml",
-        "data": "Quais grupos estão sendo vacinados: Profissionais de saúdeIdosos com 63 anos ou maisTrabalhadores do sistema funerárioTrabalhadores da Defesa Civil Municipal que atuam na força-tarefa das enchentesConselheiros municipais e estaduais de saúde que trabalham presencialmente em estabelecimentos de saúdeProfissionais de clínicas particulares Trabalhadores da segurança públicaPessoas em situação de rua com mais de 60 anos ou em tratamento de tuberculose ou HIV ",
+        "data": "Quais grupos estão sendo vacinados: Profissionais de saúdeIdosos com 63 anos ou mais",
         "updated_at": "2021-04-17 13:34:04.821 ",
         "age": 63
     },
@@ -159,13 +152,6 @@
         "data": "Quem pode ser vacinado em Boa Vista Primeiro grupo Trabalhadores de saúde que atuam tanto em locais de assistência à saúde da rede pública ou privada;Médicos, enfermeiros, técnicos de enfermagem, recepcionistas e vacinadores;Idosos institucionalizados;  Profissionais que estão doentes, apresentam sintomas de resfriado ou que estão com Covid, não podem tomar a vacina no primeiro momento. Grávidas e lactantes precisam de um diagnóstico médico antes de tomar a vacina. Grupo já avançou para segunda dose. Segundo grupo Idosos acima de 60 anos;Idosos acamados;Profissionais que atuam na linha de frente da segurança pública. ",
         "updated_at": "2021-04-14 12:29:31.573 ",
         "age": 60
-    },
-    "sc": {
-        "name": "estado de <strong>Santa Catarina<\/strong>",
-        "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/sc\/santa-catarina\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-florianopolis-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
-        "data": "Quem pode receber a 1ª dose idosos de 65 anos ou maistrabalhadores da saúde de 18 anos ou mais que atuam em clínicas, hospitais, ambulatórios, laboratórios e demais estabelecimentos de saúde públicos ou privadosacadêmicos da área de saúde em estágio curricular que atuam em hospitais e unidades de atenção primária, clínicas e congêneres em Florianópolistrabalhadores de saúde autônomos de 60 anos ou mais ",
-        "updated_at": "2021-04-16 19:17:59.511 ",
-        "age": 65
     },
     "sp": {
         "name": "estado de <strong>São Paulo<\/strong>",
