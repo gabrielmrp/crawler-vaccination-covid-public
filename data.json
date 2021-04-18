@@ -32,7 +32,7 @@
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/ba\/bahia\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-salvador-veja-quem-pode-ser-vacinado-hoje.ghtml",
         "data": "Quem pode receber a 1ª dose Sábado : Das 8h às 12h - idosos com 61 anos ou mais nascidos de janeiro de 1960 a 17 de abril de 1960;Das 13 às 18h - idosos com 60 anos ou mais nascidos de 17 de abril de 1960 a 17 de julho de 1960. Domingo : 8h às 12h - idosos 60 anos ou mais nascidos de 18 de julho de 1960 a 18 de outubro de 1960. ",
         "updated_at": "2021-04-17 00:22:45.292 ",
-        "age": "checar"
+        "age": 60
     },
     "ce": {
         "name": "estado do <strong>Ceará<\/strong>",
@@ -60,7 +60,7 @@
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/go\/goias\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-goiania-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
         "data": "Quem pode receber a 1ª dose Idosos com 62 anos ou mais ",
         "updated_at": "2021-04-18 00:22:06.525 ",
-        "age": "checar"
+        "age": 62
     },
     "ma": {
         "name": "estado do <strong>Maranhão<\/strong>",
@@ -79,9 +79,9 @@
     "ms": {
         "name": "estado do <strong>Mato Grosso do Sul<\/strong>",
         "uri_refer": "https:\/\/www1.folha.uol.com.br\/equilibrioesaude\/2021\/04\/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml",
-        "data": "MATO GROSSO DO SUL\r\rEm Campo Grande, nesta semana, a prefeitura aplicou doses remanescentes em indígenas não aldeados e moradores de comunidades quilombolas com menos de 60 anos e deu continuidade à aplicação de segunda dose.\r\rA vacinação dos demais grupos foi interrompida no sábado , quando foram imunizados profissionais de segurança. Na sexta-feira , pessoas com 61 anos também receberam as primeiras doses.\r\r",
+        "data": "Quem pode ser vacinado no município atualmente Equipe volante responsável pela vacinação;Profissionais dos hospitais, pronto atendimento, laboratórios e centro de diagnóstico por Imagem que fazem exames para Covid-19, unidades de saúde da Atenção Primária e Secundária e Vigilância em Saúde;Idosos com 85 anos ou mais;Idosos não acamados de 65 a 70 anosIdosos acima de 70 anos ",
         "updated_at": "2021-04-17 20:50:00",
-        "age": "checar"
+        "age": 70
     },
     "mg": {
         "name": "estado de <strong>Minas Gerais<\/strong>",
@@ -123,7 +123,7 @@
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/pi\/piaui\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-teresina-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
         "data": ">Quem pode receber a 1ª dose Idosos com 66 anos; veja aqui locais e horários Os públicos listados abaixo, tomam a primeira dose mediante agendamento: Pacientes renais crônicos no Centro Integrado de Saúde Lineu Araújo e nas clínicas particulares onde fazem tratamentoProfissionais de saúdePessoas acamadas ou com deficiência ",
         "updated_at": "2021-04-17 13:15:16.341 ",
-        "age": "checar"
+        "age": 66
     },
     "rj": {
         "name": "estado do <strong>Rio de Janeiro<\/strong>",
