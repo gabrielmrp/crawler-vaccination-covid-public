@@ -27,7 +27,13 @@
         "updated_at": "2021-04-17 14:42:28.620 ",
         "age": 60
     },
-    "ba": [],
+    "ba": {
+        "name": "estado da <strong>Bahia<\/strong>",
+        "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/ba\/bahia\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-salvador-veja-quem-pode-ser-vacinado-hoje.ghtml",
+        "data": "Quem pode receber a 1ª dose Sábado : Das 8h às 12h - idosos com 61 anos ou mais nascidos de janeiro de 1960 a 17 de abril de 1960;Das 13 às 18h - idosos com 60 anos ou mais nascidos de 17 de abril de 1960 a 17 de julho de 1960. Domingo : 8h às 12h - idosos 60 anos ou mais nascidos de 18 de julho de 1960 a 18 de outubro de 1960. ",
+        "updated_at": "2021-04-17 00:22:45.292 ",
+        "age": "checar"
+    },
     "ce": {
         "name": "estado do <strong>Ceará<\/strong>",
         "uri_refer": "https:\/\/www1.folha.uol.com.br\/equilibrioesaude\/2021\/04\/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml",
@@ -53,7 +59,7 @@
         "name": "estado de <strong>Goiás<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/go\/goias\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-goiania-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",
         "data": "Quem pode receber a 1ª dose Idosos com 62 anos ou mais ",
-        "updated_at": "2021-04-17 01:04:56.934 ",
+        "updated_at": "2021-04-18 00:22:06.525 ",
         "age": "checar"
     },
     "ma": {
@@ -140,7 +146,13 @@
         "updated_at": "2021-04-17 20:50:00",
         "age": 63
     },
-    "ro": [],
+    "ro": {
+        "name": "estado de <strong>Rondônia<\/strong>",
+        "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/ro\/rondonia\/noticia\/2021\/01\/27\/vacina-contra-covid-19-em-porto-velho-veja-quem-pode-ser-vacinado-hoje.ghtml",
+        "data": "Quais grupos estão sendo vacinados: Profissionais de saúdeIdosos com 63 anos ou maisTrabalhadores do sistema funerárioTrabalhadores da Defesa Civil Municipal que atuam na força-tarefa das enchentesConselheiros municipais e estaduais de saúde que trabalham presencialmente em estabelecimentos de saúdeProfissionais de clínicas particulares Trabalhadores da segurança públicaPessoas em situação de rua com mais de 60 anos ou em tratamento de tuberculose ou HIV ",
+        "updated_at": "2021-04-17 13:34:04.821 ",
+        "age": 63
+    },
     "rr": {
         "name": "estado de <strong>Roraima<\/strong>",
         "uri_refer": "https:\/\/g1.globo.com\/google\/amp\/rr\/roraima\/noticia\/2021\/01\/28\/vacina-contra-covid-19-em-boa-vista-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml",

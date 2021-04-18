@@ -52,7 +52,7 @@ $states = array(
     'ba' => [
         'name' => 'estado da <strong>Bahia</strong>',
         'uri_refer' => 'https://g1.globo.com/google/amp/ba/bahia/noticia/2021/01/27/vacina-contra-covid-19-em-salvador-veja-quem-pode-ser-vacinado-hoje.ghtml',
-        'pattern_content'=>'/(?s)(Quem pode receber a 1ª dose|Quem pode ser vacinado).*?(?=<h2)/',
+        'pattern_content'=>'/(?s)Quem pode ser vacinado.*?(?=<h2)/',
         'pattern_age'=>'/(?<=Idosos com )\d\d(?= anos)/', 
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',
         'state_age' => 61
