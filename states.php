@@ -10,6 +10,48 @@ for($i=1;$i<=(int)$day;$i++){
     if(strlen($char_i)==1){$char_i='0'.$char_i;}
     $past_days.=$char_i."|";
 }
+
+
+function retrieveCurrentAge($textArray,$patern_age){ 
+    
+    #sem informação de idade
+
+     
+
+    if($patern_age=='/./' || implode(" ",$textArray)=="Idosos"){return 60;}
+
+    #remove informação espúria de dia
+    $textArray = preg_replace('/Dia \d\d/', '', $textArray);
+     
+    preg_match_all('/\d\d/',implode(" ",$textArray),$ages);
+
+    
+
+
+    #sentinela   
+    $min_age = 1000;
+
+    #coleta o menor valor na listagem, espera-se que o regex separe apenas informações sobre idosos
+    foreach ($ages[0] as $key => $value) {
+        $value = (int)$value;
+        if($value < $min_age){
+            $min_age = $value;
+        }
+    }
+    if($min_age==1000){return 'checar';}
+    return $min_age;
+}
+
+
+function  getRegexResult($regexResult){
+
+    if(sizeof($regexResult)==0) {
+        return $regexResult;
+    } 
+    return $regexResult[0]; 
+
+}
+
  
 $all_states_regex="(?=ACRE|ALAGOAS|AMAPÁ|AMAZONAS|BAHIA|CEARÁ|DISTRITO FEDERAL|ESPÍRITO SANTO|GOIÁS|MARANHÃO|MATO GROSSO|MATO GROSSO DO SUL|MINAS GERAIS|PARÁ|PARAÍBA|PARANÁ|PERNAMBUCO|PIAUÍ|RIO DE JANEIRO|RIO GRANDE DO NORTE|RIO GRANDE DO SUL|RONDÔNIA|RORAIMA|SANTA CATARINA|SÃO PAULO|SERGIPE|TOCANTINS)";
 
@@ -32,7 +74,7 @@ function regex_content($state=False,$regex=False){
         $state='';
     }
 
-    $regex_content="/(?s)(.h2>|)(".$state."Idosos em geral<|Quem está sendo vacinado|Quem pode ser vacinado|Quem pode receber a 1ª dose|Grupo Atual|(Quais grupos( já|) estão (se vacinando|sendo vacinados)))(|\?|:).*?(<h2|<\/span|Quem pode receber a 2ª dose|".$all_states_regex.")/";
+    $regex_content="/(?s)(.h2>|)(".$state."Idosos em geral<|Quem está sendo vacinado|Quem pode ser vacinado|Quem pode receber a 1ª dose|Grupo Atual|(Quais grupos( já|) estão (se vacinando|sendo vacinados)))(|\?|:).*?(<h2|<\/span|Quem pode receber a 2ª dose|<div>|".$all_states_regex.")/";
 
       
      
@@ -40,7 +82,7 @@ function regex_content($state=False,$regex=False){
 
 }
 
-$regex_age='/([pP]essoas (de|com idades a partir de|com)|([iI]|)dosos (com mais ||a partir |com|acima )(de|)) \d\d( (a (\d\d)|anos))|interrompida/';
+$regex_age='/([pP]essoas (de|com idades a partir de|a partir de|com)|([iI]|)dosos (com mais ||a partir |com|acima )(de|)) \d\d( (a (\d\d)|anos(?! (ou mais (com defici|residentes)|de idade com defici|que vivem em asilos))))|interrompida|Idosos(?=;)(^ de idade)/';
 
 if(isset($_GET['verbose'])){
 #echo("<textarea>".regex_content("CEARÁ")."</textarea>");
@@ -61,7 +103,7 @@ $states = array(
         'name' => 'estado de <strong>Alagoas</strong>',
         'uri_refer_before' => 'https://g1.globo.com/google/amp/al/alagoas/noticia/2021/01/27/vacina-contra-covid-19-em-maceio-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
         'uri_refer' => 'https://vacina.maceio.al.gov.br/',
-        'pattern_content'=>regex_content('','/Grupo Atual:.*?\/span/'),
+        'pattern_content'=>regex_content('','/Grupo Anterior:.*?\/span/'),
         'pattern_age'=>$regex_age,
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',
         'state_age' => 60
@@ -92,8 +134,8 @@ $states = array(
     ],
     'ce' => [
         'name' => 'estado do <strong>Ceará</strong>',
-        'uri_refer_before' => 'https://g1.globo.com/google/amp/ce/ceara/noticia/2021/01/27/vacina-contra-covid-19-em-fortaleza-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
-        'uri_refer' =>'https://www1.folha.uol.com.br/equilibrioesaude/2021/04/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml',
+        'uri_refer' => 'https://g1.globo.com/google/amp/ce/ceara/noticia/2021/01/27/vacina-contra-covid-19-em-fortaleza-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
+        'uri_refer_before' =>'https://www1.folha.uol.com.br/equilibrioesaude/2021/04/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml',
         'pattern_content'=>regex_content("CEAR."),
         'pattern_age'=>$regex_age,
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',         'state_age' => 62
@@ -151,9 +193,10 @@ $states = array(
     ],
     'mg' => [
         'name' => 'estado de <strong>Minas Gerais</strong>',
-        'uri_refer' => 'https://g1.globo.com/google/amp/mg/minas-gerais/noticia/2021/01/27/vacina-contra-covid-19-em-belo-horizonte-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
-        'pattern_content'=>regex_content(),
-        'pattern_age'=>$regex_age, #Idosos de 
+        'uri_refer_before' => 'https://g1.globo.com/google/amp/mg/minas-gerais/noticia/2021/01/27/vacina-contra-covid-19-em-belo-horizonte-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
+        'uri_refer'=>'https://prefeitura.pbh.gov.br/campanha-de-vacinacao-contra-covid-19',
+        'pattern_content'=>regex_content("","/das medidas de prote.*?Compartilhe no Facebook/"),
+        'pattern_age'=>"/(?<=BLICO DE )\d\d.*?(?=ANOS)/", #Idosos de 
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',
         'state_age' => 64
     ],
@@ -201,7 +244,7 @@ $states = array(
         'name' => 'estado do <strong>Rio de Janeiro</strong>',
         'uri_refer' => 'https://g1.globo.com/google/amp/rj/rio-de-janeiro/noticia/2021/01/27/vacina-contra-covid-19-no-rio-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
         'pattern_content'=>regex_content(),
-        'pattern_age'=>'/(Dia ('.$past_days.')  - Pessoas com )\d\d(?= anos)/',
+        'pattern_age'=>$regex_age,#'/(Dia ('.$past_days.')  - Pessoas com )\d\d(?= anos)/',
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',
         'state_age' => 60
     ],
@@ -216,9 +259,9 @@ $states = array(
     'rs' => [
         'name' => 'estado do <strong>Rio Grande do Sul</strong>',
         'uri_refer_before' => 'https://g1.globo.com/google/amp/rs/rio-grande-do-sul/noticia/2021/01/27/vacina-contra-covid-19-em-porto-alegre-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
-        'uri_refer' =>'https://www1.folha.uol.com.br/equilibrioesaude/2021/04/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml',
-        'pattern_content'=>regex_content("RIO GRANDE DO SUL"),
-        'pattern_age'=>$regex_age,
+        'uri_refer' =>'https://prefeitura.poa.br/', 
+        'pattern_content'=>regex_content("","/(?s)>Calendário de vacinação Covid-19.*?article>/"),
+        'pattern_age'=>'/(?<='.$past_days.'.\d\d: )\d\d/',
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',
         'state_age' => 63
     ],
@@ -272,4 +315,8 @@ $states = array(
         'state_age' => 67
     ]
 );
+
+if(isset($_GET['verbose'])){
+    echo $states['rs']['pattern_age'];
+}
 ?>
