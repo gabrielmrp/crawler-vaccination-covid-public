@@ -74,7 +74,7 @@ function regex_content($state=False,$regex=False){
         $state='';
     }
 
-    $regex_content="/(?s)(.h2>|)(".$state."Idosos em geral<|Quem está sendo vacinado|Quem pode ser vacinado|Quem pode receber a 1ª dose|Grupo Atual|(Quais grupos( já|) estão (se vacinando|sendo vacinados)))(|\?|:).*?(<h2|<\/span|Quem pode receber a 2ª dose|<div>|".$all_states_regex.")/";
+    $regex_content="/(?s)(.h2>|)(".$state."Idosos em geral<|Quem está sendo vacinado|Quem pode ser vacinado|Quem pode receber a 1ª dose|Grupo Atual|(Quais grupos( já|) (começaram a |estão (se vacinando|sendo vacinados))))(|\?|:).*?(<h2|<\/span|Quem pode receber a 2ª dose|<div>|".$all_states_regex.")/";
 
       
      
@@ -82,7 +82,7 @@ function regex_content($state=False,$regex=False){
 
 }
 
-$regex_age='/([pP]essoas (de|com idades a partir de|a partir de|com)|([iI]|)dosos (com mais ||a partir |com|acima )(de|)) \d\d( (a (\d\d)|anos(?! (ou mais (com defici|residentes)|de idade com defici|que vivem em asilos))))|interrompida|Idosos(?=;)(^ de idade)/';
+$regex_age='/([pP]essoas (de|com idades a partir de|a partir de|com)|([iI]|)dosos (que completam|com mais ||a partir |com|acima )(de|)) \d\d( (a (\d\d)|anos(?! (ou mais (com defici|residentes)|de idade com defici|que vivem em asilos))))|interrompida|Idosos(?=;)(^ de idade)/';
 
 if(isset($_GET['verbose'])){
 #echo("<textarea>".regex_content("CEARÁ")."</textarea>");
@@ -193,10 +193,10 @@ $states = array(
     ],
     'mg' => [
         'name' => 'estado de <strong>Minas Gerais</strong>',
-        'uri_refer_before' => 'https://g1.globo.com/google/amp/mg/minas-gerais/noticia/2021/01/27/vacina-contra-covid-19-em-belo-horizonte-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
-        'uri_refer'=>'https://prefeitura.pbh.gov.br/campanha-de-vacinacao-contra-covid-19',
-        'pattern_content'=>regex_content("","/das medidas de prote.*?Compartilhe no Facebook/"),
-        'pattern_age'=>"/(?<=BLICO DE )\d\d.*?(?=ANOS)/", #Idosos de 
+        'uri_refer' => 'https://g1.globo.com/google/amp/mg/minas-gerais/noticia/2021/01/27/vacina-contra-covid-19-em-belo-horizonte-veja-quem-pode-ser-vacinado-hoje-e-o-que-fazer.ghtml',
+        'uri_refer_before'=>'https://prefeitura.pbh.gov.br/campanha-de-vacinacao-contra-covid-19',
+        'pattern_content'=>regex_content(),#regex_content("","/das medidas de prote.*?Compartilhe no Facebook/"),
+        'pattern_age'=>$regex_age,#"/(?<=BLICO DE )\d\d.*?(?=ANOS)/", #Idosos de 
         'pattern_updated_at'=>'/(?<="dateModified" datetime=").*?(?=">)/',
         'state_age' => 64
     ],
@@ -292,8 +292,9 @@ $states = array(
     ],
     'sp' => [
         'name' => 'estado de <strong>São Paulo</strong>',
-        'uri_refer' => 'https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/vigilancia_em_saude/index.php?p=307599',
-        'pattern_content'=>regex_content('','/GRUPOS PRIORIT.*?POSTOS DE VACINA/'),
+        'uri_refer_before' => 'https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/vigilancia_em_saude/index.php?p=307599',
+        'uri_refer'=>'https://www1.folha.uol.com.br/equilibrioesaude/2021/04/quem-pode-se-vacinar-agora-veja-o-cronograma-pelo-pais.shtml',
+        'pattern_content'=>regex_content(">SÃO PAULO"),#regex_content('','/GRUPOS PRIORIT.*?POSTOS DE VACINA/'),
         'pattern_age'=>$regex_age,
         'pattern_updated_at'=>'/(?<= datetime=.).*?(?=">)/',
          'state_age' => 67
