@@ -1,5 +1,19 @@
 <?php
 include('states.php');
+
+
+if(isset($_GET['verbose'])){
+echo "<br>";
+foreach ($states as $key => $value) {
+	echo "<a href='".$value['uri_refer']."' target='_blank'>".$key."</a><br \>";
+	# code...
+}
+    
+#echo("<textarea>".regex_content("CEARÁ")."</textarea>");
+#echo("<textarea>".regex_content()."</textarea>");
+#echo("<textarea>".regex_content("",".*?")."</textarea>");
+}
+
  
 $verbose=isset($_GET['verbose']) ;
 
@@ -31,9 +45,6 @@ $all_urls=[];
 $statesList = array_values($states);
 $statesInfo = array();
  
-
-
- 
  
 
 
@@ -42,7 +53,7 @@ $subset_states = array_keys($states);
 
  #$subset_states = ['ms','ce','es','rs','sc','rj','sp', 'ac','ap','ba','am'];
   # $subset_states = ['ac','al','ap','am','ba', 'ce', 'df','es','go','ma','mt','ms','mg','pa','pb','pr','pe','pi','rj','rn','rs','ro','rr','sc','sp','se','to'];
- #$subset_states = ['df','es','pb','sp','to'];
+#$subset_states = ['ba'];
 
 foreach ($states as $key => $value) {
 
@@ -77,6 +88,11 @@ foreach ($states as $key => $value) {
 
 	$matches[0] = implode(" ", $matches);
 
+	/*echo("<textarea>");
+	var_dump($matches);
+	echo("</textarea>");
+	*/
+
  
 
   
@@ -98,20 +114,21 @@ foreach ($states as $key => $value) {
 
 			#print_r([$key,$value['pattern_age']]);
 			$pattern_age=$value['pattern_age'] ;
+			$pattern_age_all=$value['pattern_age_all'] ;
 			preg_match_all($pattern_age,$matches[0],$years);
-
+			preg_match_all($pattern_age_all,$matches[0],$years_all);
 
 
 
 		}
 		else {
 			$pattern_age="/\d\d(?= anos)/";
+			$pattern_age_all="/\d\d(?= anos)/";
 			$years= [0=>''];
 		}
 
 		preg_match($value['pattern_updated_at'],$result, $updated_at);	
-
-
+ 
 		$statesInfo[$key]['name'] = $value['name'];
 		$statesInfo[$key]['uri_refer'] = $value['uri_refer'];
 		$statesInfo[$key]['data'] = $matches[0];
@@ -119,7 +136,7 @@ foreach ($states as $key => $value) {
 
 		$statesInfo[$key]['updated_at'] = empty($update_at)?date('d-m-Y'):$update_at;
 		$statesInfo[$key]['age'] = retrieveCurrentAge($years[0],$pattern_age);
-
+		//$statesInfo[$key]['age_all'] = retrieveCurrentAgeAll($years_all[0],$pattern_age_all);
 		}
 			
 	} 
